@@ -1,4 +1,4 @@
-# Lajto's FreeBSD desktop config
+# Michael's FreeBSD desktop config
 My personal configuration for FreeBSD in desktop. It's designed for my personal
 case, so please don't use it.
 
@@ -8,7 +8,7 @@ a AMD Ryzen + NVIDIA environment, and `vm` asumes a VirtualBox environment.
 ## Installation
 
 - Keymap: `es.kbd`
-- Hostname: `lajto-bsd`
+- Hostname: `michael-bsd`
 - Optional system components to install:
     - `kernel-dbg`
     - `lib32`
