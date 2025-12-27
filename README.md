@@ -20,7 +20,7 @@ This is a reference implementation, not production-hardened.
 
 Example Jail JSON
 
-,,,,
+```
 
 {
   "name": "testjail",
@@ -29,29 +29,29 @@ Example Jail JSON
   "host_hostname": "testjail.local"
 }
 
-,,,,
+```
 
 Example Requests
 
 List jails
 
-,,,
+```
 curl http://localhost:8080/jails
-,,,
+```
 
 Create jail
 
-,,,
+```
 curl -X POST http://localhost:8080/jails \
   -H "Content-Type: application/json" \
   -d '{"name":"testjail","path":"/usr/jails/testjail","ip":"192.168.1.50","host_hostname":"testjail.local"}'
-,,,
+```
 
 Execute command
 
-,,,
+```
 curl -X POST http://localhost:8080/jails/testjail/exec \
   -H "Content-Type: application/json" \
   -d '{"command":["/bin/ls","/"]}'
-,,,
+```
 
